@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Grape+Nuts&family=Oswald:wght@300&family=Quicksand:wght@300&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Grape+Nuts&family=Quicksand:wght@300&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #1D1D20;
+}
+header {
+    display: flex;
+    width: 90%;
+    margin: 0 5%;
+    padding: 10px 0;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(#D16BA5, #ab86e7);
+    border-image-slice: 1;
+
+}
+header i {
+    position: absolute;
+    left: 88%;
+    font-size: 35px;
+    color: rgb(172, 172, 172);
+    margin-top: 22px;
+}
+header i:hover {
+    cursor: pointer;
+    position: absolute;
+    left: 88%;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 22px;
+    transition: 0.2s;
+}
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 20px 7%;
+}
+.logo h2 {
+    color: white;
+    font-size: 30px;
+}
+.info {
+    display: flex;
+    border-left: 2px solid transparent;
+    border-image: linear-gradient(#D16BA5, #ab86e7);
+    border-image-slice: 1;
+    padding: 0 30px;
+    margin: 10% 10%;
+}
+.info h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+.info p {
+    color: white;
+    padding: 10px 0;
+    font-weight: 500;
+}
+.info button {
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 10px;
+    background: none;
+}
+.info a {
+    text-decoration: none;
+    color: white;
+}
+
+.info button:hover {
+    padding: 15px;
+    transition: 1s;
+}
+.info li {
+    color: white;
+}
+
+@media screen and (max-width: 711px) {
+    header .logo h2 {
+        font-size: 25px;
+    }
+    header i {
+        margin-top: 18px;
+        left: 80%;
+    }
+    header i:hover {
+        cursor: pointer;
+        position: absolute;
+        left: 80%;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        margin-top: 22px;
+        transition: 0.2s;
+    }
+    .info {
+        margin-top: 25%;
+    }
+    .info h1 {
+        font-size: 40px;
+    }
+    button {
+        margin-top: 3px;
+    }
+}
