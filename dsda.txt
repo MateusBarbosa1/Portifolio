@@ -1,2 +1,0 @@
-<p>Hello, my name is Mateus Barbosa, I'm a back-end developer, I'm always looking to evolve my technical and personal skills.</p>
-        <p>I discovered programming when I was 10 years old as a way to impress my mother, I currently work developing websites with NodeJs.</p>

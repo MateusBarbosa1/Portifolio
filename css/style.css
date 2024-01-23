@@ -9,7 +9,10 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #1D1D20;
+    background: linear-gradient(-45deg, #0f0f0f, #1D1D20,#292929,#424242);
+    animation: colors 6s ease infinite;
+    background-size: 500% 500%;
+    overflow-x: hidden;
 }
 header {
     display: flex;
@@ -17,7 +20,7 @@ header {
     margin: 0 5%;
     padding: 10px 0;
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(#D16BA5, #ab86e7);
+    border-image: linear-gradient(to right,#D16BA5, #ab86e7);
     border-image-slice: 1;
 
 }
@@ -69,13 +72,13 @@ header i:hover {
     padding: 10px 0;
     font-weight: 500;
 }
-.info button {
+button {
     cursor: pointer;
     border: 2px solid white;
     padding: 10px;
     background: none;
 }
-.info a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -84,11 +87,75 @@ header i:hover {
     padding: 15px;
     transition: 1s;
 }
-.info li {
-    color: white;
+.secao4 {
+    margin-top: 7%;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Grape Nuts', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
+.secao4-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+}
+
+.secao4-div-card {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3 - 60px);
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: linear-gradient(#D16BA5, #ab86e7);
+    transition: all 0.5s ease;
+}
+
+.secao4-div-card:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.secao4-div-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.secao4-div-card h3 {
+    padding: 10px;
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 801px) {
+    .secao4-div-card {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(80% - 60px);
+        margin: 30px 18%;
+        padding: 20px;
+        box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        background: linear-gradient(#D16BA5, #ab86e7);
+        transition: all 0.5s ease;
+    }
+    .secao4-div {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 711px) {
+    
     header .logo h2 {
         font-size: 25px;
     }
@@ -113,5 +180,17 @@ header i:hover {
     }
     button {
         margin-top: 3px;
+    }
+}
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
