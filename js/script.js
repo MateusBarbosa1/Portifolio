@@ -6,16 +6,18 @@ function getTec() {
                     <br>
                     <p style="padding: 3px 0;">JavaScript - Nodejs</p>
                     <p style="padding: 3px 0;">Databases - (Mysql,Postgresql,MongoDB)</p>
-                    <p style="padding: 3px 0;">Design Patterns - MVC</p>
+                    <p style="padding: 3px 0;">Design Patterns</p>
                     <p style="padding: 3px 0;">Infrastructure knowledge</p>
+                    <p style="padding: 3px 0;">Java - (Learning)</p>
                     <p style="padding: 3px 0;">HTML/CSS</p>
                     <br>
                     <h1 style="font-size: 20px;font-weight: bold;">Main Frameworks</h1>
                     <br>
                     <p style="padding: 3px 0;">Express</p>
+                    <p style="padding: 3px 0;">Next JS</p>
                     <p style="padding: 3px 0;">Prisma</p>
                     <p style="padding: 3px 0;">Body-Parser</p>
-                    <p style="padding: 3px 0;">Next JS</p>
+                    <p style="padding: 3px 0;">Consign</p>
                     <br>
                     <button onclick="home()" ><a>Home</a></button>`
 }
