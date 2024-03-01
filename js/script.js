@@ -24,7 +24,7 @@ function home() {
     <br>
     <p id="p1">I'm a back-end developer who works mainly with nodejs!</p>
     <br>
-    <button><a href="/projects.html">Ver Projetos</a></button>
+    <button><a href="/Portifolio/projects">Ver Projetos</a></button>
     <button onclick="getTec()"><a>Conhecimentos Tecnicos</a></button>
     <button onclick="getAbout()"><a>Sobre mim</a></button>`;
 }
