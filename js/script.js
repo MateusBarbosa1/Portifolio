@@ -1,11 +1,12 @@
 var div = document.querySelector(".info div");
 
 function getTec() {
-  div.innerHTML = `<h1 style="font-weight: bold;">Technologies</h1>
+  div.innerHTML = `<h1 style="font-weight: bold;">Tecnologias</h1>
                     <br>
                     <p style="padding: 3px 0;">JavaScript - Nodejs</p>
                     <p style="padding: 3px 0;">Java - Spring Boot</p>
                     <p style="padding: 3px 0;">Databases - (Mysql,Postgresql,MongoDB)</p>
+                    <p style="padding: 3px 0;">MVC / SOLID / Clean Code</p>
                     <p style="padding: 3px 0;">GIT / GIT HUB</p>
                     <p style="padding: 3px 0;">HTML/CSS</p>
                     <br>
