@@ -1,46 +1,235 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Portifolio/css/style.css" />
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Desenvolvedor Back-end</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <span class="logo-text">&lt;Dev /&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <title>Mateus Barbosa</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <h2
-          onclick="window.location.href = '/Portifolio';"
-          style="cursor: pointer"
-        >
-          Mateus Barbosa
-        </h2>
-      </div>
-
-      <a href="https://github.com/MateusBarbosa1"
-        target="_blank"><i class="devicon-github-original"></i
-      ></a>
-    </header>
-    <section class="info">
-      <div>
-        <h1 id="title1">Bem vindo(a)!</h1>
-        <br />
-        <p id="p1">
-          Eu sou um programador Web focado mais no back-end, <br>
-          que atualmente procura emprego na área!!
-        </p>
-        <br />
-        <button><a href="/Portifolio/projects">Ver Projetos</a></button>
-        <button onclick="getTec()"><a>Conhecimento Tecnico</a></button>
-        <button onclick="getAbout()"><a>Sobre mim</a></button>
-      </div>
+    <!-- HERO SECTION -->
+    <section class="hero" style="background-image: url('eu.jpeg'); background-size: cover; background-position: center;">
+        <div class="hero-content">
+            <h1 class="hero-title">Desenvolvedor Back-end</h1>
+            <p class="hero-subtitle">Criando soluções robustas e escaláveis para o futuro</p>
+            <div class="hero-cta">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
+            </div>
+        </div>
+        <div class="hero-decoration">
+            <div class="glow-circle glow-1"></div>
+            <div class="glow-circle glow-2"></div>
+        </div>
     </section>
 
-    <script src="js/script.js"></script>
-  </body>
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="section about">
+        <div class="section-container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Sou um desenvolvedor back-end apaixonado por criar arquiteturas escaláveis e eficientes. Com experiência em desenvolvimento de APIs, microsserviços e otimização de banco de dados, busco sempre entregar soluções de alta qualidade.</p>
+                    <p>Tenho expertise em diferentes tecnologias e frameworks, com foco em boas práticas de código, testes automatizados e DevOps. Adoro resolver problemas complexos e contribuir para projetos que fazem diferença.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">Projetos Entregues</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Tecnologias</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO TECNOLOGIAS -->
+    <section id="tecnologias" class="section technologies">
+        <div class="section-container">
+            <h2 class="section-title">Tecnologias</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">📜</div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, Async/Await, Promises</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Spring Boot, OOP</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🟢</div>
+                    <h3>Node.js</h3>
+                    <p>Express, APIs REST</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">⚙️</div>
+                    <h3>Spring Boot</h3>
+                    <p>Microserviços, REST APIs</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🗄️</div>
+                    <h3>Banco de Dados</h3>
+                    <p>MySQL, PostgreSQL, MongoDB</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🏗️</div>
+                    <h3>Arquitetura</h3>
+                    <p>MVC, SOLID, Clean Code</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🐳</div>
+                    <h3>Docker</h3>
+                    <p>Containerização, Deployment</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">🔗</div>
+                    <h3>Git & GitHub</h3>
+                    <p>Controle de Versão, Colaboração</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section id="projetos" class="section projects">
+        <div class="section-container">
+            <h2 class="section-title">Projetos</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('projeto1.png'); background-size: cover; background-position: center;">
+                        <span class="project-badge">BOT</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Bot de Agendamento</h3>
+                        <p>Bot inteligente para gerenciamento de agendamentos com integração de banco de dados, notificações automáticas e interface amigável.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MateusBarbosa1/BotBruno" class="link-btn">Ver Código</a>
+                            <a href="https://wa.me/558198234779" class="link-btn">Em Produção</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('projeto2.png'); background-size: cover; background-position: center;">
+                        <span class="project-badge">DASHBOARD</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dashboard Financeiro</h3>
+                        <p>Plataforma de análise financeira com API REST, gráficos em tempo real e gestão de dados complexos com PostgreSQL.</p>
+                        <div class="project-tags">
+                            <span class="tag">API REST</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MateusBarbosa1/gestor-financas-api" class="link-btn">Ver Código</a>
+                            <a href="https://financaspro-xjx3.onrender.com/" class="link-btn">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('projeto3.png'); background-size: cover; background-position: center;">
+                        <span class="project-badge">E-COMMERCE</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Loja Virtual</h3>
+                        <p>Plataforma de e-commerce completa com gestão de produtos, carrinho de compras, processamento de pedidos e integração com banco de dados.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MateusBarbosa1/ApepStore" class="link-btn">Ver Código</a>
+                            <a href="https://apepstore.onrender.com/" class="link-btn">Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section contact">
+        <div class="section-container">
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <div class="contact-content">
+                <p class="contact-subtitle">Estou sempre aberto a novas oportunidades e colaborações</p>
+                <div class="contact-links">
+                    <a href="mailto:mateusbarbosadev@gmail.com" class="contact-btn">
+                        <span class="contact-icon">📧</span>
+                        Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/devmateusbarbosa/" target="_blank" class="contact-btn">
+                        <span class="contact-icon">💼</span>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/MateusBarbosa1" target="_blank" class="contact-btn">
+                        <span class="contact-icon">🐙</span>
+                        GitHub
+                    </a>
+                    <a href="https://wa.me/5581997626344" target="_blank" class="contact-btn">
+                        <span class="contact-icon">💬</span>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2024 Desenvolvedor Back-end. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#tecnologias">Tecnologias</a>
+                <a href="#projetos">Projetos</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
