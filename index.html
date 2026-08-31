@@ -1,242 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Desenvolvedor Back-end</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- NAVEGAÇÃO -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <div class="logo">
-                <span class="logo-text">&lt;Mateus Barbosa /&gt;</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="theme-color" content="#111313" />
+    <meta name="description" content="Portfólio de Mateus Barbosa de Queiroz, desenvolvedor Web Full Stack e empreendedor." />
+    <link rel="icon" type="image/png" href="/manus-storage/mateus-mark_464554cf.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mateus Barbosa de Queiroz — Desenvolvedor Full Stack</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" id="site-header">
+        <a class="brand" href="#top" aria-label="Mateus Barbosa de Queiroz, início">
+          <img src="/manus-storage/mateus-mark_464554cf.png" alt="" />
+          <span>MBQ<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="nav-links" id="main-nav" aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#stack">Stack</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+          <a class="nav-contact" href="mailto:mateusbarbosadev@gmail.com">Fale comigo <span class="arrow-icon">↗</span></a>
+        </nav>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="menu-line"></span><span class="menu-line"></span>
+        </button>
+      </header>
+
+      <main id="top">
+        <section class="hero section-pad">
+          <div class="hero-copy">
+            <div class="reveal">
+              <div class="eyebrow"><span class="eyebrow-dot"></span> Disponível para novos projetos</div>
+              <h1>Transformando ideias em <em>aplicações web.</em></h1>
+              <p class="hero-lede">Sou Mateus Barbosa, desenvolvedor Full Stack e empreendedor. Desenvolvo aplicações web, APIs e soluções digitais com foco em código, experiência do usuário e resultados.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#projetos">Ver projetos <span class="arrow-icon">↗</span></a>
+                <a class="button button-quiet" href="mailto:mateusbarbosadev@gmail.com">Entrar em contato <span class="mail-icon">✉</span></a>
+              </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#sobre" class="nav-link">Sobre</a></li>
-                <li><a href="#tecnologias" class="nav-link">Tecnologias</a></li>
-                <li><a href="#projetos" class="nav-link">Projetos</a></li>
-                <li><a href="#contato" class="nav-link">Contato</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+          </div>
+          <div class="hero-art-wrap reveal">
+            <div class="hero-art-frame">
+              <img src="/manus-storage/mateus-terminal-hero_235ff5e7.png" alt="Composição abstrata inspirada em terminal e arquitetura de software" />
+              <div class="hero-terminal">
+                <div><span class="prompt">mateus@barbosadev</span><span class="muted">:~/portfolio$</span> whoami</div>
+                <div class="terminal-output">Full Stack Developer<span class="cursor"></span></div>
+                <div class="terminal-meta"><span>build</span> <strong>stable</strong><span>·</span><span>projects</span> <strong>20+</strong></div>
+              </div>
+              <div class="art-index">MBQ / 01</div>
             </div>
-        </div>
-    </nav>
+          </div>
+          <a class="scroll-cue" href="#sobre"><span class="down-arrow">⌄</span><span>Role para explorar</span></a>
+        </section>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Desenvolvedor Back-end</h1>
-            <p class="hero-subtitle">Criando soluções robustas e escaláveis para o futuro</p>
-            <div class="hero-cta">
-                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
-            </div>
-        </div>
-        <div class="hero-decoration">
-            <div class="glow-circle glow-1"></div>
-            <div class="glow-circle glow-2"></div>
-        </div>
-    </section>
+        <section id="sobre" class="section-pad about-section">
+          <div class="section-intro"><div class="section-label"><span>01</span><span>Sobre mim</span></div><p class="intro-note">Código que sai do rascunho e chega ao produto.</p></div>
+          <div class="about-grid">
+            <div class="reveal"><h2>Construo com intenção,<br /><span>entrego com clareza.</span></h2></div>
+            <div class="about-text reveal"><p>Comecei minha trajetória na programação cedo e, ao longo dos anos, transformei o desenvolvimento de software em uma prática constante. Hoje atuo como desenvolvedor Full Stack e CEO da Barbosa Dev, desenvolvendo soluções web para empresas e profissionais.</p><p>Minha experiência envolve diferentes etapas do desenvolvimento de software, desde o levantamento de requisitos e planejamento até desenvolvimento, integração, deploy e manutenção.</p><p>Além do desenvolvimento, também atuo como Professor de Educação Tecnológica, ensinando lógica de programação e Python.</p></div>
+          </div>
+          <div class="stat-row">
+            <div class="reveal"><strong>+20</strong><span>projetos web</span></div>
+            <div class="reveal"><strong>2+</strong><span>anos à frente da Barbosa Dev</span></div>
+            <div class="reveal"><strong>Full Stack</strong><span>forma de construir</span></div>
+            <div class="reveal"><strong>Python</strong><span>lógica em prática</span></div>
+          </div>
+        </section>
 
-    <!-- SEÇÃO SOBRE -->
-    <section id="sobre" class="section about">
-        <div class="section-container">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Comecei estudar programação aos 11 anos.
-Ao longo desses 7 anos, fui aprofundando
-meus estudos, criando projetos pessoais e
-para terceiros. Com o tempo fui me
-apaixonando cada vez mais em resolver
-problemas de forma lógica e eficiente.
-</p>
-                    <p>Tenho expertise em diferentes tecnologias e frameworks, com foco em boas práticas de código, testes automatizados e DevOps.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">3+</span>
-                        <span class="stat-label">Anos de Experiência</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">6+</span>
-                        <span class="stat-label">Projetos Entregues</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">12</span>
-                        <span class="stat-label">Tecnologias</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="experiencia" class="section-pad experience-section">
+          <div class="section-intro"><div class="section-label"><span>02</span><span>Experiência</span></div><p class="intro-note">Trajetória feita de prática e responsabilidade.</p></div>
+          <div class="timeline">
+            <div class="timeline-item reveal"><div class="timeline-marker">01</div><div class="timeline-content"><div class="timeline-heading"><div><h3>Barbosa Dev</h3><p>CEO &amp; Desenvolvedor Full Stack</p></div><span class="date">Experiência prática</span></div><p>Fundador e responsável pelo desenvolvimento de soluções web para clientes e profissionais.</p><div class="tag-list"><span>+20 projetos web desenvolvidos</span><span>HTML, CSS, JavaScript e Node.js</span><span>APIs REST</span><span>Integração frontend e backend</span><span>Bancos SQL</span><span>Deploy em cloud</span><span>Gerenciamento de projetos</span><span>Relacionamento com clientes</span><span>Git e GitHub</span></div></div></div>
+            <div class="timeline-item reveal"><div class="timeline-marker">02</div><div class="timeline-content"><div class="timeline-heading"><div><h3>Professor de Educação Tecnológica</h3><p>Programação &amp; Python</p></div><span class="date">2026 — Atual</span></div><p>Ensino e acompanhamento de projetos práticos em um ambiente de aprendizagem colaborativo.</p><div class="tag-list"><span>Lógica de programação</span><span>Python</span><span>Projetos práticos</span><span>Comunicação com alunos</span><span>Trabalho em equipe</span></div></div></div>
+          </div>
+        </section>
 
-    <!-- SEÇÃO TECNOLOGIAS -->
-    <section id="tecnologias" class="section technologies">
-        <div class="section-container">
-            <h2 class="section-title">Tecnologias</h2>
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <div class="tech-icon">📜</div>
-                    <h3>JavaScript</h3>
-                    <p>ES6+, Async/Await, Promises</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">☕</div>
-                    <h3>Java</h3>
-                    <p>Spring Boot, OOP</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">🟢</div>
-                    <h3>Node.js</h3>
-                    <p>Express, APIs REST</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">⚙️</div>
-                    <h3>Spring Boot</h3>
-                    <p>Microserviços, REST APIs</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">🗄️</div>
-                    <h3>Banco de Dados</h3>
-                    <p>MySQL, PostgreSQL, MongoDB</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">🏗️</div>
-                    <h3>Arquitetura</h3>
-                    <p>MVC, SOLID, Clean Code</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">🐳</div>
-                    <h3>Docker</h3>
-                    <p>Containerização, Deployment</p>
-                </div>
-                <div class="tech-card">
-                    <div class="tech-icon">🔗</div>
-                    <h3>Git & GitHub</h3>
-                    <p>Controle de Versão, Colaboração</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="stack" class="section-pad stack-section">
+          <div class="section-intro"><div class="section-label"><span>03</span><span>Stack</span></div><p class="intro-note">Ferramentas para pensar, construir e colocar no ar.</p></div>
+          <div class="stack-grid">
+            <div class="stack-card reveal"><div class="stack-icon">&lt;/&gt;</div><h3>Frontend</h3><div class="stack-items"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+            <div class="stack-card reveal"><div class="stack-icon">⌁</div><h3>Backend</h3><div class="stack-items"><span>Node.js</span><span>Express.js</span><span>Python</span></div></div>
+            <div class="stack-card reveal"><div class="stack-icon">◫</div><h3>Banco de dados</h3><div class="stack-items"><span>SQL</span><span>SQL Server</span></div></div>
+            <div class="stack-card reveal"><div class="stack-icon">⑂</div><h3>Outros</h3><div class="stack-items"><span>REST API</span><span>Git</span><span>GitHub</span><span>Desenvolvimento Web</span><span>Lógica de Programação</span></div></div>
+          </div>
+        </section>
 
-    <!-- SEÇÃO PROJETOS -->
-    <section id="projetos" class="section projects">
-        <div class="section-container">
-            <h2 class="section-title">Projetos</h2>
-            <div class="projects-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('/Portifolio/img/produto1.png'); background-size: cover; background-position: center;">
-                        <span class="project-badge">BOT</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Bot de Agendamento</h3>
-                        <p>Bot inteligente para gerenciamento de agendamentos com integração de banco de dados, notificações automáticas e interface amigável.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MateusBarbosa1/BotBruno" class="link-btn">Ver Código</a>
-                            <a href="https://wa.me/558198234779" class="link-btn">Em Produção</a>
-                        </div>
-                    </div>
-                </div>
+        <section id="projetos" class="section-pad projects-section">
+          <div class="section-intro"><div class="section-label"><span>04</span><span>Projetos selecionados</span></div><p class="intro-note">Produtos reais, problemas específicos, aprendizado contínuo.</p></div>
+          <div class="projects-grid">
+            <article class="project-card project-01 reveal"><div class="project-visual"><div class="project-visual-fallback"><span>ia.clean</span><span class="visual-symbol">&lt; + &gt;</span></div><span class="project-number">01 / 04</span><span class="author-tag">Projeto próprio</span></div><div class="project-info"><div class="project-title-row"><div><span class="project-category">Projeto próprio</span><h3>IA Clean</h3></div><span class="project-arrow">↗</span></div><p>Projeto criado para trabalhar com ferramentas relacionadas à limpeza e tratamento de conteúdo gerado por inteligência artificial.</p><div class="project-bottom"><div class="project-tech"><span>Projeto autoral</span><span>Produto próprio</span></div><div class="project-links"><a href="https://iaclean.com/" target="_blank" rel="noreferrer" aria-label="Abrir IA Clean"><span>↗</span></a></div></div></div></article>
+            <article class="project-card project-02 reveal"><div class="project-visual"><img src="/manus-storage/mateus-project-financas_eacd8f20.png" alt="Arte abstrata do dashboard Finanças Pro" /><span class="project-number">02 / 04</span></div><div class="project-info"><div class="project-title-row"><div><span class="project-category">Dashboard / Gestão financeira</span><h3>Finanças Pro</h3></div><span class="project-arrow">↗</span></div><p>Dashboard de gestão financeira para controle de receitas, despesas, categorias e acompanhamento financeiro.</p><div class="project-bottom"><div class="project-tech"><span>Node.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span></div><div class="project-links"><a href="https://financaspro-xjx3.onrender.com/" target="_blank" rel="noreferrer" aria-label="Abrir demo de Finanças Pro">↗</a><a href="https://github.com/MateusBarbosa1/gestor-financas-api" target="_blank" rel="noreferrer" aria-label="Abrir GitHub de Finanças Pro">⌘</a></div></div></div></article>
+            <article class="project-card project-03 reveal"><div class="project-visual"><div class="project-visual-fallback"><span>barbosa.dev</span><span class="visual-symbol">—</span></div><span class="project-number">03 / 04</span></div><div class="project-info"><div class="project-title-row"><div><span class="project-category">Site institucional</span><h3>Barbosa Dev</h3></div><span class="project-arrow">↗</span></div><p>Site institucional desenvolvido para apresentar os serviços da Barbosa Dev e captar clientes.</p><div class="project-bottom"><div class="project-tech"><span>Desenvolvimento Web</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://barbosadev.tech" target="_blank" rel="noreferrer" aria-label="Abrir Barbosa Dev">↗</a></div></div></div></article>
+            <article class="project-card project-04 reveal"><div class="project-visual"><img src="/manus-storage/mateus-project-apep_9f94bb27.png" alt="Arte abstrata da loja Apep Store" /><span class="project-number">04 / 04</span></div><div class="project-info"><div class="project-title-row"><div><span class="project-category">E-commerce</span><h3>Apep Store</h3></div><span class="project-arrow">↗</span></div><p>Loja virtual em desenvolvimento utilizando Node.js com arquitetura Full Stack para gerenciamento de produtos, usuários e pedidos.</p><div class="project-bottom"><div class="project-tech"><span>Node.js</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>SQL</span></div><div class="project-links"><a href="https://apepstore-x3wm.onrender.com/" target="_blank" rel="noreferrer" aria-label="Abrir demo de Apep Store">↗</a><a href="https://github.com/MateusBarbosa1/ApepStore" target="_blank" rel="noreferrer" aria-label="Abrir GitHub de Apep Store">⌘</a></div></div></div></article>
+          </div>
+        </section>
 
-                <!-- Projeto 2 -->
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('/Portifolio/img/produto2.png'); background-size: cover; background-position: center;">
-                        <span class="project-badge">DASHBOARD</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Dashboard Financeiro</h3>
-                        <p>Plataforma de análise financeira com API REST, gráficos em tempo real e gestão de dados complexos com PostgreSQL.</p>
-                        <div class="project-tags">
-                            <span class="tag">API REST</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MateusBarbosa1/gestor-financas-api" class="link-btn">Ver Código</a>
-                            <a href="https://financaspro-xjx3.onrender.com/" class="link-btn">Demo</a>
-                        </div>
-                    </div>
-                </div>
+        <section class="section-pad own-section"><div class="own-mark">&lt;<span>+</span>&gt;</div><div class="own-copy"><div class="section-label"><span>05</span><span>Construindo produtos além do código</span></div><h2>Ideias próprias também<br /><em>merecem virar produto.</em></h2><p>Além de desenvolver aplicações para clientes, também crio e desenvolvo meus próprios projetos. A IA Clean representa essa busca por transformar ideias em produtos reais, explorando problemas específicos e criando soluções através da tecnologia.</p></div><div class="own-aside">projeto<br /><strong>autoral</strong></div></section>
 
-                <!-- Projeto 3 -->
-                <div class="project-card">
-                    <div class="project-image" style="background-image: url('/Portifolio/img/produto3.png'); background-size: cover; background-position: center;">
-                        <span class="project-badge">E-COMMERCE</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Loja Virtual</h3>
-                        <p>Plataforma de e-commerce completa com gestão de produtos, carrinho de compras, processamento de pedidos e integração com banco de dados.</p>
-                        <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MateusBarbosa1/ApepStore" class="link-btn">Ver Código</a>
-                            <a href="https://apepstore-x3wm.onrender.com/" class="link-btn">Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="section-pad formation-section"><div class="formation-col"><div class="section-label"><span>06</span><span>Formação</span></div><div class="formation-card"><div><span class="mini-label">Graduação — 2026 / Cursando</span><h3>UNIFAVIP Wyden</h3></div><div class="formation-subjects"><span>Desenvolvimento Web</span><span>Engenharia de Software</span><span>Banco de Dados</span><span>Estrutura de Dados</span><span>Programação</span></div></div></div><div class="language-col"><div class="section-label"><span>07</span><span>Idiomas</span></div><div class="language-list"><div><span>Português</span><strong>Nativo</strong></div><div><span>Inglês</span><strong>B1 <small>Intermediário</small></strong></div></div></div></section>
 
-    <!-- SEÇÃO CONTATO -->
-    <section id="contato" class="section contact">
-        <div class="section-container">
-            <h2 class="section-title">Vamos Conversar?</h2>
-            <div class="contact-content">
-                <p class="contact-subtitle">Estou sempre aberto a novas oportunidades e colaborações</p>
-                <div class="contact-links">
-                    <a href="mailto:mateusbarbosadev@gmail.com" class="contact-btn">
-                        <span class="contact-icon">📧</span>
-                        Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/devmateusbarbosa/" target="_blank" class="contact-btn">
-                        <span class="contact-icon">💼</span>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/MateusBarbosa1" target="_blank" class="contact-btn">
-                        <span class="contact-icon">🐙</span>
-                        GitHub
-                    </a>
-                    <a href="https://wa.me/5581997626344" target="_blank" class="contact-btn">
-                        <span class="contact-icon">💬</span>
-                        WhatsApp
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section id="contato" class="section-pad contact-section"><div class="contact-kicker">PRÓXIMO PASSO <span>—</span> 08</div><h2>Tire a ideia do rascunho<br /><em>e coloque em produção.</em></h2><p>Tem um problema para resolver, um projeto em movimento ou uma oportunidade? Entre em contato comigo.</p><div class="contact-actions"><a class="button button-primary" href="mailto:mateusbarbosadev@gmail.com">Enviar mensagem <span class="arrow-icon">↗</span></a><a class="button button-outline" href="https://linkedin.com/in/devmateusbarbosa/" target="_blank" rel="noreferrer">LinkedIn <span>in</span></a><a class="button button-outline" href="https://github.com/MateusBarbosa1" target="_blank" rel="noreferrer">GitHub <span>⌘</span></a></div><a class="contact-email" href="mailto:mateusbarbosadev@gmail.com">mateusbarbosadev@gmail.com <span>↗</span></a></section>
+      </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-container">
-            <p>&copy; 2024 Desenvolvedor Back-end. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="#sobre">Sobre</a>
-                <a href="#tecnologias">Tecnologias</a>
-                <a href="#projetos">Projetos</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
-</body>
+      <footer class="site-footer"><div class="footer-brand"><img src="/manus-storage/mateus-mark_464554cf.png" alt="" /><div><strong>Mateus Barbosa de Queiroz</strong><span>Desenvolvedor Full Stack &amp; Empreendedor</span></div></div><div class="footer-links"><a href="https://github.com/MateusBarbosa1" target="_blank" rel="noreferrer">GitHub</a><a href="https://linkedin.com/in/devmateusbarbosa/" target="_blank" rel="noreferrer">LinkedIn</a><a href="mailto:mateusbarbosadev@gmail.com">Email</a></div><span class="footer-copy">© <span id="current-year"></span> / Feito com código.</span></footer>
+    </div>
+    <script defer src="%VITE_ANALYTICS_ENDPOINT%/umami" data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
-
